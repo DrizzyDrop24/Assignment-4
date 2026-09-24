@@ -5,6 +5,7 @@ from simple_sorts import bubble_sort, selection_sort, insertion_sort
 from random import randint
 from time import perf_counter_ns
 
+
 def draw_sort_speed_charts(sort_times, list_lengths):
     import matplotlib.pyplot as plt
 
@@ -65,7 +66,8 @@ def experiment(num_trials, list_size, min_value, max_value):
     avg_ss_time = ss_total_time / num_trials
     avg_is_time = is_total_time / num_trials
     avg_py_time = py_total_time / num_trials
-    return (avg_bs_time, avg_ss_time, avg_is_time, avg_py_time)
+    return avg_bs_time, avg_ss_time, avg_is_time, avg_py_time
+
 
 def main():
     print("Running sort time trials...")
@@ -82,6 +84,7 @@ def main():
     for i in range(len(experiment_sizes)):
         print(f"{experiment_sizes[i]}\t{sort_times[i][0]:.2f}\t{sort_times[i][1]:.2f}\t{sort_times[i][2]:.2f}")
     draw_sort_speed_charts(sort_times, experiment_sizes)
+
 
 if __name__ == '__main__':
     main()
