@@ -1,0 +1,7 @@
+1. Bubble sort is slower because it performs many more swaps than selection sort and insertion sort. It repeatedly compares and swaps adjacent elements throughout the list, creating extra work even when elements are already close to their correct positions.
+
+2. Big-O describes how an algorithm grows as the input size increases, but it does not measure the exact number of operations. Two algorithms can have the same Big-O complexity and still perform differently because of different constants, numbers of comparisons, numbers of swaps, and implementation details.4
+
+3. The concept is called comparability or ordering. The objects in the class must be able to be compared with one another. In Python, this can be done by implementing comparison methods such as __it__() (less than), and possibly __eq__() (equal to). The sorting algorithms rely on comparisons like < and > to determine the correct order of elements.
+
+4. Python's built-in sort is faster because it uses a much more advanced algorithm called Timsort, which has a worst-case runtime of O(n log n). Bubble sort, selection sort, and insertion sort are generally O(n²). The difference is more fundamental than optimization alone because the built-in sort uses a more eff
